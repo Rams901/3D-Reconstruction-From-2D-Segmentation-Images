@@ -1,6 +1,6 @@
 import vtk
 reader = vtk.vtkSTLReader()
-reader.SetFileName("sample_3d_object.stl")
+reader.SetFileName("full_lungs.stl")
 mapper = vtk.vtkPolyDataMapper()
 mapper.SetInputConnection(reader.GetOutputPort())
 actor = vtk.vtkActor()
